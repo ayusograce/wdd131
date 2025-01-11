@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>WDD 131 TEST PAGE</title>
-    <meta name="description" content="TEST PAGE">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Grace Ayuso</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Grace Adriana Ayuso Ferrín. Main page with info about me and my country.">
     <meta name="author" content="Grace Ayuso">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,100&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
-    <h1>TEST TITLE</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Grace Ayuso</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/grace-ayuso-15b1762bb/" title=" LinkedIn"> LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/omni/1?lang=eng&id=p26#p26" title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <p>My name is Grace Ayuso, but most of my friends call me by my middle name, Adriana. I was born in Ecuador where I have lived all my life. I am currently studying to get a bachelor degree in Software Development, and I am enjoying what I am learning. I love spending time with my family and enjoying the little moments in life. I also like solving puzzles, reading and baking in my free time.</p>
+                <img src="images/profile.webp" alt="This is me!">
+            </div>
+            <div class="country">
+                <h3>Manabi, Ecuador</h3>
+                <figure>
+                    <img src="images/ecuador.jpg" alt="Ecuador flag" width="200">
+                    <figcaption>Flag of Ecuador</figcaption>
+                </figure>
+                <p>Ecuador is a latinamerican country full of natural riches and turistic sites. It is bordered by Colombia to the north, Peru to the east and south, and the Pacific Ocean to the west. It has four regions: a tropical, a mountain, a jungle, and an island region. Quito es the capital of Ecuador and one of the most poblated cities in the country. Overall, Ecuador is a country with a variety of things to do and places to visit!</p>
+            </div>
+        </section>
+        <section class="card">
+            <div class="devlinks">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to/" title="Dev.to Community">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" title="Smashing Magazine">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" title="CSS Tricks">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" title="W3 Schools">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/courses/development/web-development/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Branded-Topic_la.ES_cc.LATAM&campaigntype=Search&portfolio=BrandTopic&language=ES&product=Course&test=&audience=Keyword&topic=&priority=&utm_content=deal4584&utm_term=_._ag_122876139243_._ad_604231009895_._kw_cursos%20en%20l%C3%ADnea%20udemy_._de_c_._dm__._pl__._ti_kwd-1394266915329_._li_9076320_._pd__._&matchtype=b&gad_source=1&gclid=CjwKCAiAp4O8BhAkEiwAqv2UqA16pTrylr9NKe0v53HtMkaNN0Eneg7EIPvrouKvAZygPfaQv-xVcBoC8AwQAvD_BwE" title="Udemy">Udemy</a></li>
+                    <li><a href="https://placehold.co/" title="Image Placeholder">Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"> - Grace Adriana Ayuso - Ecuador</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
-
-</html>
