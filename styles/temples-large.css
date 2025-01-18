@@ -23,7 +23,6 @@
 	nav {
 		display: flex;
 		flex-direction: row;
-		top: 1rem;
 		border-top: 0;
 		margin: 0;
 	}
