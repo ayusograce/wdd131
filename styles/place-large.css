@@ -28,7 +28,7 @@
     .weather h2::after{
         content: '';
         display: inline-block;
-        background-image: url("images/weather-icon.svg");
+        /* background-image: url("images/weather-icon.svg"); */
         background-size: contain;
         background-repeat: no-repeat;
         width: 60px;
