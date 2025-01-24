@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuador - Grace Ayuso</title>
+    <meta name="description" content="Page with information of Ecuador, the south american country.">
+    <meta name="author" content="Grace Ayuso">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ecuador</h1>
+    </header>
+    <main class="position">
+        <div class="hero">
+            <picture>
+                <source srcset="images/ecuador-horizontal-large.webp" media="(min-width: 1700px)">
+                <source srcset="images/ecuador-horizontal.webp" media="(min-width: 1000px)">
+                <source srcset="images/ecuador-horizontal-small.webp" media="(min-width: 500px)">
+                <img src="images/ecuador-vertical.webp" alt="Picture of Cotopaxi, a volcano in Ecuador" width="" height="">
+            </picture>
+        </div>
+        <div class="columns data">
+            <h2>Data</h2>
+            <ul class="right">
+                <li>Area: </li>
+                <li>Population: </li>
+                <li>Capital: </li>
+                <li>Languages: </li>
+                <li>Currency: </li>
+                <li>Time Zone: </li>
+                <li>Calling Code: </li>
+                <li>Internet TLD: </li>
+            </ul>
+            <ul class="left">
+                <li>283,561 sq km</li>
+                <li>18,221,418</li>
+                <li>Quito</li>
+                <li>Spanish, Quichua</li>
+                <li>United States dollar</li>
+                <li>GMT-5</li>
+                <li>+593</li>
+                <li>.ec</li>
+            </ul>
+        </div>
+        <div class="columns weather">
+            <h2>Weather</h2>
+            <div class="icon">
+                <img src="images/weather-icon.svg" alt="weather icon, sun and cloud">
+            </div>
+            <ul class="right">
+                <li>Temperature: </li>
+                <li>Conditions: </li>
+                <li>Wind: </li>
+                <li>Wind Chill: </li>
+            </ul>
+            <ul class="left">
+                <li>28 °C</li>
+                <li>Partly Cloudy</li>
+                <li>23 km/h</li>
+                <li id="windChill">°C</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"> - Grace Adriana Ayuso - Ecuador</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* large view navigation ************************************/
+@media (min-width: 700px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+    h2 {
+        text-align: left;
+        padding-left: 2rem;
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+
+    .columns {
+        position: absolute;
+        background-color: rgba(245, 247, 255, 0.568);
+        padding: 1rem;
+        border-radius: 3rem;
+        grid-template-columns: auto 1fr;
+        border-top: 0;
+    }
+
+    .weather {
+        right: 3rem;
+        bottom: 5rem;
+    }
+
+    .weather h2::after{
+        content: '';
+        display: inline-block;
+        background-image: url("images/weather-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 60px;
+    }
+
+    .data {
+        top: 3rem;
+        left: 2rem
+    }
+
+    .position {
+        position: relative;
+    }
+
+}
