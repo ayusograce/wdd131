@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #afa5a5;
+    /* --secondary-color: #bbb; */
+    --secondary-color: #ffef63;
+    --accent1-color: #FFFFFF;
+    /* --background-color: #37392D; */
+    --background-color: #a01e1e;
+}
+
+body, footer {
+    font-family: "Roboto", sans-serif;
+    max-width: 100%;
+}
+
+header {
+    display: block;
+    background-color: var(--background-color);
+    max-width: 100%;
+    padding: 1.5rem;
+}
+
+h1{
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    grid-column: 1/3;
+}
+
+li{
+    list-style-type: none;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right {
+    text-align: right;
+    padding-left: 1rem;
+    /* color: var(--primary-color); */
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.weather {
+    border-top: 1px solid var(--secondary-color);
+}
+
+.weather h2{
+    margin-bottom: 0;
+}
+
+.left {
+    text-align: left;
+    padding-left: 1rem;
+    margin-top: 0;
+}
+
+.icon{
+    grid-column: 1/3;
+    display: block;
+    max-width: 100px;
+    width: 20%;
+    margin: auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-top: 5px solid var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+footer {
+    background-color: var(--background-color);
+    align-content: center;
+}
+
+footer p {
+    color: var(--accent1-color);
+    padding: 7px;
+    text-align: center;
+    margin: 0;
+}
