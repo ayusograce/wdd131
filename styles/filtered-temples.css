@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #FF9F3E;
-    --secondary-color: #bbb;
+    --primary-color: hsl(30, 100%, 62%);
+    --secondary-color: rgb(24, 24, 105);
     --accent1-color: #FFFFFF;
     --background-color: #37392D;
     --accent3-color: #ccc;
@@ -75,16 +75,29 @@ nav a:hover {
 }
 
 main { 
-	max-width: 1000px;
+	max-width: 1500px;
 	margin: 0 auto;
 }
 
 .container {
 	display:grid; 
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
 	grid-gap: 0.5rem;
 	place-items: center;
 	padding-bottom: 2rem;
+	
+}
+
+section {
+	background-color: #ececec;
+	text-align: center;
+	border:1px solid #c4c4d3de;
+	padding: 0.5rem;
+}
+
+.label {
+	color: var(--background-color);
+	font-weight: 800;
 }
 
 h2 {
