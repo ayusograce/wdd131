@@ -129,7 +129,7 @@ smallLink.addEventListener("click", () => {
 	createTempleCard(temples.filter(temple => temple.area < 10000));
 });
 
-
+//TEMPLES FUNCTION
 function createTempleCard(filteredTemples){
 	document.querySelector(".container").innerHTML = "";
 	filteredTemples.forEach(temple => {
