@@ -97,7 +97,7 @@ section {
 
 .label {
 	color: var(--background-color);
-	font-weight: 800;
+	font-weight: bold;
 }
 
 h2 {
