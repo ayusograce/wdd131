@@ -75,13 +75,13 @@ nav a:hover {
 }
 
 main { 
-	max-width: 1500px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .container {
 	display:grid; 
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
 	grid-gap: 0.5rem;
 	place-items: center;
 	padding-bottom: 2rem;
