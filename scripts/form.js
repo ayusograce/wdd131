@@ -51,22 +51,22 @@ function createOptions(products){
 
 createOptions(products);
 
-//Tracking the number of reviews
-document.addEventListener("DOMContentLoaded", () => {
-  const reviewsDisplay = document.querySelector(".counter");
+// //Tracking the number of reviews
+// document.addEventListener("DOMContentLoaded", () => {
+//   const reviewsDisplay = document.querySelector(".counter");
 
-  if (!reviewsDisplay) return;
+//   if (!reviewsDisplay) return;
 
-  let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+//   let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
 
-  if (numReviews === 0){
-    reviewsDisplay.textContent = `This is your first review. Thank you!`;
-  }
-  else{
-    reviewsDisplay.textContent = `Number of Reviews: ${numReviews}`;
-  }
+//   if (numReviews === 0){
+//     reviewsDisplay.textContent = `This is your first review. Thank you!`;
+//   }
+//   else{
+//     reviewsDisplay.textContent = `Number of Reviews: ${numReviews}`;
+//   }
 
-  numReviews++;
+//   numReviews++;
 
-  localStorage.setItem("numReviews-ls", numReviews);
-});
+//   localStorage.setItem("numReviews-ls", numReviews);
+// });

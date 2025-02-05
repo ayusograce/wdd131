@@ -113,8 +113,8 @@ form{
     border-right: solid 8px green;
 }
 
-/* OTHER MAIN ELEMENTS */
-main {
+/* OTHER MAIN ELEMENTS OF THE REVIEW PAGE */
+.review {
     display: block;
     justify-items: center;
 }
