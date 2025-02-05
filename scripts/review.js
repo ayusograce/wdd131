@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     reviewsDisplay.textContent = `This is your first review. Thank you!`;
   }
   else{
-    reviewsDisplay.textContent = `Number of Reviews: ${numReviews}`;
+    reviewsDisplay.textContent = `${numReviews}`;
   }
 
   numReviews++;
