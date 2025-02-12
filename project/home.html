@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Irresistible Gourmet</title>
+        <meta name="description" content="Project for the WDD131 class. Irresistible Gourmet is an ecuadorian bakery that sells delicious baked goods. This site provides information about the bakery and how to contact them to buy the products.">
+        <link rel="stylesheet" href="styles/irresistible.css">
+        <link rel="stylesheet" href="styles/irresistible-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="scripts/irresistible.js" defer></script>
+    </head>
+<body>
+    <header>
+        <div class="title">
+            <img src="images/logo-irresistible.svg" alt="Irresistible Gourmet logo" width="150">
+            <h1>Irresistible Gourmet</h1>
+            <button id="menu" aria-label="Menu button"></button>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#" id="home" title="Home">Home</a></li>
+                <li><a href="#" id="products" title="Products">Products</a></li>
+                <li><a href="#" id="contact" title="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="position">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/cake-horizontal.webp" media="(min-width: 1700px)">
+                    <source srcset="images/cake-horizontal.webp" media="(min-width: 1000px)">
+                    <source srcset="images/cake-horizontal-small.webp" media="(min-width: 500px)">
+                    <img src="images/cake-vertical.webp" alt="Cake image" width="500" height="750">
+                </picture>
+            </div>
+            <div class="phrase">
+                <p>Passion in every creation</p>
+            </div>
+        </div>
+        <div class="general-products">
+            <div class="cakes">
+                <h2>Cakes</h2>
+                <img src="images/cakes.webp" alt="Piece of cake">
+                <p>Delicious cakes in your favorite flavors! We offer chocolate, vanilla, red velvet, bubblegum, banana, rum raisin, chocolate mint, Oreo, carrot, and many more.</p>
+            </div>
+            <div class="cookies">
+                <h2>Cookies</h2>
+                <img src="images/cookies.webp" alt="A couple of cookies">
+                <p>You can't miss out on our cookies! With the perfect texture and an irresistible flavor, you’ll keep coming back for more and more.</p>
+            </div>
+            <div class="cupcakes">
+                <h2>Cupcakes</h2>
+                <img src="images/cupcake.webp" alt="Pink cupcake">
+                <p>Once you try our cupcakes, you won’t be able to resist! With a soft, moist texture and an irresistible flavor, you'll want to try them all.</p>
+            </div>
+        </div>
+        <div class="about-bakery">
+            <div>
+                <h2>About the bakery</h2>
+                <p>We create custom cakes, cupcakes, cake pops, and cookies tailored to your wishes. As a family-owned bakery, we’re dedicated to adding a sweet touch to your life with our delicious creations. Get in touch with us and make every moment sweeter with your loved ones!</p>
+            </div>
+            <img src="images/little-about-us.webp" alt="Cupcakes in a structure">
+        </div>
+        <div class="last-part">
+            <div>
+                <h2>Contact Us</h2>
+                <div class="contact">
+                    <img src="images/phone-icon.svg" alt="phone icon">
+                    <p>+593 99 136 5767</p>
+                    <img src="images/whatsapp-icon.svg" alt="whatsapp icon">
+                    <p>+593 99 136 5767</p>
+                    <a href="#" class="button-main first">Place an Order</a>
+                </div>
+            </div>
+            <div>
+                <h2>Find Us</h2>
+                <div class="contact">
+                    <img src="images/location-icon.svg" alt="location icon">
+                    <p>Montecristi, Ecuador</p>
+                    <a href="https://maps.app.goo.gl/zcdZDbWoDbzpd9EN6" class="button-main">Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="icon">
+            <a href="https://m.facebook.com/people/Pasteleria-Irresistible-Gourmet/61562000602982/">
+                <img src="images/fb.svg" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@irresistiblegourmet">
+                <img src="images/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/pasteleria_irresistiblegourmet/">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+        <p class="sin-pad">
+            <span id="currentyear"> | Irresistible Gourmet | Ecuador</span>
+        </p>
+    </footer>
+</body>
+</html>

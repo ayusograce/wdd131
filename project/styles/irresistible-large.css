@@ -1,0 +1,92 @@
+/* large view navigation ************************************/
+@media (min-width: 700px) {
+    
+    /* THE FIRST PART: NAVIGATION AND TITLE */
+	#menu {
+		display: none;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.5rem;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: row;
+		border-top: 0;
+		margin: 0;
+	}
+
+	.nav a {
+		display: block;
+		flex: 1 1 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+	}
+
+    .nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        padding-left: 2rem;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	
+
+    /* THE CONTENT OF THE PAGE */
+    h2 {
+		font-size: 2rem;
+	}
+
+    .phrase{
+        bottom: 35rem;
+    }
+
+    .phrase p{
+        font-size: xxx-large;
+    }
+
+    .general-products{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid var(--accent-faded);
+    }
+
+    .general-products img{
+        border: 10px solid var(--accent-faded);
+    }
+
+    .general-products p{
+        max-width: 400px;
+        border-bottom: none;
+    }
+
+    .about-bakery{
+        margin-top: 2rem;
+        display: grid;
+        place-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .last-part{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* THE FOOTER OF THE PAGE */
+}

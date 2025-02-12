@@ -1,0 +1,229 @@
+:root {
+    --primary-color: #F21534;
+    --secondary-color: #A52A2A;
+    --white-color: #FFFFFF;
+    --accent-faded : #a52a2a1f;
+    --title-font: "Raleway", serif;
+    --text-font: "Roboto", serif;
+}
+
+/* NAVIGATION */
+header{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    max-width: 100%;
+    border-bottom: solid var(--white-color) 1px;
+}
+
+.nav {
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: var(--background-color);
+	max-width: 700px;
+	margin: 1rem auto;
+    border-top: 1px solid ;
+}
+
+.nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--white-color);
+    font-family: var(--text-font);
+    font-weight: bold;
+	font-size: large;
+}
+.nav a:hover {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+}
+
+h1{
+    font-family: var(--title-font);
+    /* margin: 0; */
+}
+
+.title img{
+    width: 8rem;
+}
+
+#menu {
+	font-size: 1.75rem;
+	border: 0;
+	background: none;
+	color: var(--white-color);
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "x";
+}
+
+.open a {
+	display: block;
+}
+
+/* THE CONTENT OF THE PAGE */
+
+main { 
+	max-width: 1900px;
+	margin: 0 auto;
+}
+
+div{
+    display: block;
+    text-align: center;
+}
+
+
+h2{
+    color: var(--primary-color);
+    font-family: var(--title-font);
+}
+
+p{
+    font-family: var(--text-font);
+}
+
+.position {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: var(--secondary-color) solid 15px;
+}
+
+.phrase {
+    position: absolute;
+    bottom: 13rem;
+    /* left: 1rem; */
+    background-color: #ffffffd3;
+    border-radius: 10%;
+    width: 100%;
+}
+
+.phrase p{
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.general-products{
+    align-items: center;
+}
+
+.general-products img {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid var(--accent-faded);
+}
+
+.general-products p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--accent-faded);
+}
+
+.about-bakery{
+    background-color: var(--accent-faded);
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10%;
+    max-width: 1300px;
+}
+
+.about-bakery h2{
+    padding-top: 2rem;
+    color: var(--secondary-color)
+}
+
+.about-bakery img{
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.contact img{
+    width: 40px;
+    grid-column: 1;
+}
+
+.contact{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: 40px 160px auto;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.contact p{
+    grid-column: 2;
+}
+
+.first{
+    grid-column: 3;
+    grid-row: 1/3;
+    max-height: 35px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.button-main{
+    font-family: var(--title-font);
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 15%;
+    text-decoration: none;
+}
+
+/* FOOTER OF THE PAGE */
+footer{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+footer p{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+.sin-pad{
+    margin-bottom: 0;
+}
+
+.icon{
+    text-align: center;
+}
+
+.icon img{
+    width: 40px;
+    text-decoration: none;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
