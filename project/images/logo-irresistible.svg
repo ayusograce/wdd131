@@ -1,0 +1,26 @@
+<svg width="600" height="600" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo Circular -->
+  <circle cx="150" cy="150" r="140" fill="white" stroke="brown" stroke-width="6"/>
+  
+  <!-- Decoración de glaseado -->
+  <path d="M50 100 C90 50, 210 50, 250 100 Q245 120, 225 110 T200 120 T175 110 T150 115 T125 105 T100 115 T75 110 T50 100" 
+        fill="rgb(242, 21, 52)" stroke="none"/>
+  
+  <!-- Texto Principal -->
+  <text x="75" y="61" font-family="Pacifico, cursive" font-size="27" fill="brown">Irresistible</text>
+  <text x="54" y="171" font-family="Great Vibes, cursive" font-size="50" fill="brown">Gourmet</text>
+  
+  <!-- Línea curva decorativa -->
+  <path d="M60 180 Q150 220, 240 180" stroke="brown" stroke-width="8" fill="none"/>
+  
+  <!-- Franja inferior -->
+  <rect x="60" y="218" width="180" height="40" fill="rgb(242, 21, 52)" rx="12"/>
+  <text x="68" y="243" font-family="Sans-serif" font-size="15" fill="white">Pasión en cada creación</text>
+  
+  <!-- Etiqueta de pastelería -->
+  <text x="106" y="277" font-family="Sans-serif" font-size="20" fill="rgb(242, 21, 52)">Pastelería</text>
+  
+  <!-- Detalle de cereza -->
+  <circle cx="146" cy="39" r="8" fill="red"/>
+  <path d="M150 35 Q155 30, 150 25" stroke="green" stroke-width="3" fill="none"/>
+</svg>
