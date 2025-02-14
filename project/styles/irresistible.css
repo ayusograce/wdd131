@@ -111,8 +111,6 @@ p{
 
 .phrase {
     position: absolute;
-    bottom: 13rem;
-    /* left: 1rem; */
     background-color: #ffffffd3;
     border-radius: 10%;
     width: 100%;
@@ -121,10 +119,24 @@ p{
 .phrase p{
     font-family: var(--title-font);
     color: var(--secondary-color);
-    font-size: x-large;
     font-style: italic;
     font-weight: bold;
-    margin: 1rem;
+}
+
+.banter{
+    bottom: 13rem;
+    font-size: x-large;
+}
+
+.banter-products{
+    bottom: 3rem;
+    font-size: medium;
+}
+
+.banter-products p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 10px;
 }
 
 .general-products{
@@ -144,6 +156,7 @@ p{
     padding-right: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--accent-faded);
+    text-align: justify;
 }
 
 .about-bakery{
@@ -153,6 +166,7 @@ p{
     padding-right: 1rem;
     border-radius: 10%;
     max-width: 1300px;
+    text-align: justify;
 }
 
 .about-bakery h2{
@@ -226,4 +240,166 @@ footer p{
     width: 40px;
     text-decoration: none;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+
+/* THE CAROUSEL OF THE PRODUCTS PAGE */
+.product-section{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: var(--accent-faded) 2px solid;
+}
+
+.product-section p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+.product-section a{
+    margin-bottom: 1rem;
+}
+
+.carousel{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.carousel img{
+    width: 96%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    border: var(--accent-faded) 6px solid;
+}
+
+.carousel button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--secondary-color);
+    border-radius: 100%;
+    color: white;
+    border: none;
+    /* padding: 5px; */
+    cursor: pointer;
+    font-size: 22px;
+}
+.prev { 
+    left: 10px; }
+
+.next { 
+    right: 10px; }
+
+
+
+    
+/* CONTENT OF THE CONTACT PAGE */
+.contact-form{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    border: 1px solid var(--accent-faded);
+    padding: 0 1rem 0 1rem;
+    margin: 1rem;
+    width: 400px;
+}
+
+.f1 label{
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: medium;
+    
+}
+
+.f1 div, .f1 label[for="name"],
+.f1 label[for="completiondate"],
+.f1 label[for="product"],
+.f1 label[for="review"]{
+    padding-top: 1rem;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    font-family: var(--title-font);
+}
+
+.f1 label[for="1star"],
+.f1 label[for="2star"],
+.f1 label[for="3star"],
+.f1 label[for="4star"],
+.f1 label[for="5star"],
+.f1 label[for="durability"]
+{
+    padding-top: 5px;
+}
+
+.f1 p{
+    margin: 0;
+    color: black;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.f1 input[type="text"],
+.f1 input[type="date"],
+.f1 select, .f1 textarea
+{
+    background-color: var(--accent-faded);
+    display: block;
+    border: solid 1px var(--accent2-color);
+    border-radius: 6px;
+    padding: 0.75rem 0 0.75rem 0;
+    color: #555;
+    width: 100%;
+    max-width: 390px;
+    appearance: none;
+}
+
+.f1 input[type="radio"],
+.f1 input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+
+.f1 input[type="submit"]{
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.f1 input:required{
+    border-right: solid 8px red;
+}
+
+.f1 input:required:valid{
+    border-right: solid 8px green;
+}
+
+.review {
+    display: block;
+    justify-items: center;
+}
+
+.review h2{
+    padding-top: 1rem;
+}
+
+.review p{
+    padding: 3rem;
+    font-size: larger;
 }
