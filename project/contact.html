@@ -39,39 +39,42 @@
                 <p>Do you have questions? Are you ready to order? Contact us and we will help you!</p>
             </div>
         </div>
-        <div class="contact-form">
-            <h2>Contact form</h2>
-            <form method="get" action="" class="f1">
-            
-                <label for="product">Product Name*
-                    <select name="product" id="product" required>
-                        <option value="" disabled selected>Select a Product...</option>
-                    </select>
-                </label>
-                
-                <div>Overall Rating*</div>
-                <label for="1star"><input type="radio" name="rating" id="1star" value="1star" required>&star;</label>
-                <label for="2star"><input type="radio" name="rating" id="2star" value="2star" required>&star; &star;</label>
-                <label for="3star"><input type="radio" name="rating" id="3star" value="3star" required>&star; &star; &star;</label>
-                <label for="4star"><input type="radio" name="rating" id="4star" value="4star" required>&star; &star; &star; &star;</label>
-                <label for="5star"><input type="radio" name="rating" id="5star" value="5star" required>&star; &star; &star; &star; &star;</label>
-    
-                <label for="completiondate">Date of Installation*<input type="date" name="completeDate" id="completiondate" required></label>
-                
-                <div>Which features did you find useful in the product?</div>
-                <p>(Check all that apply)</p>
-                <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
-                <label for="easy"><input type="checkbox" id="easy" name="easyness" value="yes">Ease of Use</label>
-                <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
-                <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
-    
-                <label for="review">Written Review (Optional)</label>
-                <textarea id="review" name="review" rows="4"></textarea>
-    
-                <label for="name">Your Name (optional)<input type="text" name="name" id="name"></label> 
-    
-                <input type="submit" value="Post Review">
-            </form>
+        <div class="contact-page">
+            <div class="contact-form">
+                <h2>Contact form</h2>
+                <form method="get" action="message.html" class="f1">
+                    <label for="name">Name*<input type="text" name="name" id="name" placeholder="Your name" required></label> 
+                    <label for="mail">Email*<input type="email" name="email" placeholder="someone@email.com" required></label>
+                    <label for="product">Type of message*
+                        <select name="product" id="product" required>
+                            <option value="" disabled selected>Select an option...</option>
+                        </select>
+                    </label>
+                    <label for="telephone">Phone <input type="tel" name="phone" placeholder="1235551234" ></label>
+                    <label for="completiondate">Date for the order<input type="date" name="completeDate" id="completiondate"></label>
+                    <label for="message">Your message*
+                    <textarea id="review" name="review" rows="4" placeholder="Write your message here!" required></textarea></label>
+                    <input type="submit" value="Submit my message">
+                </form>
+            </div>
+            <div class="contact-contact">
+                <h2>Irresistible Gourmet</h2>
+                <div class="info-gourmet">
+                    <div class="title">
+                        <img src="images/logo-irresistible.svg" alt="Irresistible Gourmet logo">
+                    </div>
+                    <div class="irresistible-info">
+                        <p>Calle Guillermo Balda, y esquina</p>
+                        <p>Montecristi 130223, Manabí, Ecuador</p>
+                        <p>Telephone: 099 136 5767</p>
+                        <p>Mondays to Saturdays: 8h40 - 18h00</p>
+                        <p>Sundays: 9h00 - 12h00</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1602955678427!2d-80.66088669999999!3d-1.0406104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be52d55379865%3A0xd8409c57d58051f9!2sIrresistible%20Gourmet!5e0!3m2!1ses-419!2sec!4v1739569719295!5m2!1ses-419!2sec" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

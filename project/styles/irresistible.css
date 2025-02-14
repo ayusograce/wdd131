@@ -302,66 +302,47 @@ footer p{
     
 /* CONTENT OF THE CONTACT PAGE */
 .contact-form{
-    display: flex;
-    justify-content: center;
+    display: block;
+    justify-items: center;
 }
 
 form{
     border: 1px solid var(--accent-faded);
-    padding: 0 1rem 0 1rem;
+    border-radius: 7%;
+    /* padding: 0 1rem 0 1rem; */
+    padding: 2rem;
     margin: 1rem;
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
+    background-color: var(--accent-faded);
 }
 
 .f1 label{
     display: block;
     padding-top: 1rem;
-    color: var(--primary-color);
-    font-size: medium;
-    
-}
-
-.f1 div, .f1 label[for="name"],
-.f1 label[for="completiondate"],
-.f1 label[for="product"],
-.f1 label[for="review"]{
-    padding-top: 1rem;
-    color: black;
+    color: var(--secondary-color);
     font-size: medium;
     font-weight: bold;
     font-family: var(--title-font);
+    text-align: start;
 }
 
-.f1 label[for="1star"],
-.f1 label[for="2star"],
-.f1 label[for="3star"],
-.f1 label[for="4star"],
-.f1 label[for="5star"],
-.f1 label[for="durability"]
-{
-    padding-top: 5px;
-}
-
-.f1 p{
-    margin: 0;
-    color: black;
-    font-size: 0.9rem;
-    font-style: italic;
-}
-
-.f1 input[type="text"],
-.f1 input[type="date"],
+.f1 input[type="text"], .f1 input[type="email"],
+.f1 input[type="date"], .f1 input[type="tel"],
 .f1 select, .f1 textarea
 {
-    background-color: var(--accent-faded);
+    background-color: var(--white-color);
     display: block;
     border: solid 1px var(--accent2-color);
     border-radius: 6px;
     padding: 0.75rem 0 0.75rem 0;
     color: #555;
     width: 100%;
-    max-width: 390px;
+    box-sizing: border-box;
+    /* max-width: 390px; */
     appearance: none;
+    font-family: var(--text-font);
+    padding-left: 0.5rem;
 }
 
 .f1 input[type="radio"],
@@ -372,7 +353,7 @@ form{
 
 .f1 input[type="submit"]{
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #fff;
     border-radius: 6px;
     padding: 0.8rem;
@@ -402,4 +383,47 @@ form{
 .review p{
     padding: 3rem;
     font-size: larger;
+}
+
+/* MESSAGE PAGE */
+.message-page{
+    padding-bottom: 3rem;
+}
+
+.message-page h1{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.message-page p{
+    font-size: large;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.info-message p{
+    font-size: large;
+}
+
+.social-message{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.social-message a{
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.contact-contact{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: var(--accent-faded) 1px solid;
+    padding-bottom: 2rem;
+}
+
+.irresistible-info{
+    padding-top: 1rem;
 }
