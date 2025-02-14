@@ -28,7 +28,51 @@
         </nav>
     </header>
     <main>
-
+        <div class="position">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/cupcakes-products-large.webp" media="(min-width: 1000px)">
+                    <img src="images/cupcakes-products-small.webp" alt="Cupcakes image" width="750" height="300">
+                </picture>
+            </div>
+            <div class="phrase banter-products">
+                <p>Do you have questions? Are you ready to order? Contact us and we will help you!</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact form</h2>
+            <form method="get" action="" class="f1">
+            
+                <label for="product">Product Name*
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
+                
+                <div>Overall Rating*</div>
+                <label for="1star"><input type="radio" name="rating" id="1star" value="1star" required>&star;</label>
+                <label for="2star"><input type="radio" name="rating" id="2star" value="2star" required>&star; &star;</label>
+                <label for="3star"><input type="radio" name="rating" id="3star" value="3star" required>&star; &star; &star;</label>
+                <label for="4star"><input type="radio" name="rating" id="4star" value="4star" required>&star; &star; &star; &star;</label>
+                <label for="5star"><input type="radio" name="rating" id="5star" value="5star" required>&star; &star; &star; &star; &star;</label>
+    
+                <label for="completiondate">Date of Installation*<input type="date" name="completeDate" id="completiondate" required></label>
+                
+                <div>Which features did you find useful in the product?</div>
+                <p>(Check all that apply)</p>
+                <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label for="easy"><input type="checkbox" id="easy" name="easyness" value="yes">Ease of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
+    
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="4"></textarea>
+    
+                <label for="name">Your Name (optional)<input type="text" name="name" id="name"></label> 
+    
+                <input type="submit" value="Post Review">
+            </form>
+        </div>
     </main>
     <footer>
         <nav class="icon">
