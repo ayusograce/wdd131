@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="scripts/irresistible.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
 </head>
 <body>
     <header>
         <div class="title">
-            <img src="images/logo-irresistible.svg" alt="Irresistible Gourmet logo" width="150">
+            <img loading="lazy" src="images/logo-irresistible.svg" alt="Irresistible Gourmet logo" width="150">
             <h1>Irresistible Gourmet</h1>
             <button id="menu" aria-label="Menu button"></button>
         </div>
@@ -32,7 +32,7 @@
             <div class="hero">
                 <picture>
                     <source srcset="images/cupcakes-products-large.webp" media="(min-width: 1000px)">
-                    <img src="images/cupcakes-products-small.webp" alt="Cupcakes image" width="750" height="300">
+                    <img loading="lazy" src="images/cupcakes-products-small.webp" alt="Cupcakes image" width="750" height="300">
                 </picture>
             </div>
             <div class="phrase banter-products">
@@ -45,8 +45,8 @@
                 <form method="get" action="message.html" class="f1">
                     <label for="name">Name*<input type="text" name="name" id="name" placeholder="Your name" required></label> 
                     <label for="mail">Email*<input type="email" name="email" placeholder="someone@email.com" required></label>
-                    <label for="product">Type of message*
-                        <select name="product" id="product" required>
+                    <label for="message">Type of message*
+                        <select name="message" id="message" required>
                             <option value="" disabled selected>Select an option...</option>
                         </select>
                     </label>
@@ -61,7 +61,7 @@
                 <h2>Irresistible Gourmet</h2>
                 <div class="info-gourmet">
                     <div class="title">
-                        <img src="images/logo-irresistible.svg" alt="Irresistible Gourmet logo">
+                        <img loading="lazy" src="images/logo-irresistible.svg" alt="Irresistible Gourmet logo">
                     </div>
                     <div class="irresistible-info">
                         <p>Calle Guillermo Balda, y esquina</p>
@@ -80,18 +80,19 @@
     <footer>
         <nav class="icon">
             <a href="https://m.facebook.com/people/Pasteleria-Irresistible-Gourmet/61562000602982/">
-                <img src="images/fb.svg" alt="Facebook">
+                <img loading="lazy" src="images/fb.svg" alt="Facebook">
             </a>
             <a href="https://www.tiktok.com/@irresistiblegourmet">
-                <img src="images/tiktok.svg" alt="TikTok">
+                <img loading="lazy" src="images/tiktok.svg" alt="TikTok">
             </a>
             <a href="https://www.instagram.com/pasteleria_irresistiblegourmet/">
-                <img src="images/instagram.svg" alt="Instagram">
+                <img loading="lazy" src="images/instagram.svg" alt="Instagram">
             </a>
         </nav>
         <p class="sin-pad">
             <span id="currentyear"> | Irresistible Gourmet | Ecuador</span>
         </p>
     </footer>
+    
 </body>
 </html>

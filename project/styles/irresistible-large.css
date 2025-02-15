@@ -80,16 +80,40 @@
     .about-bakery{
         margin-top: 2rem;
         display: grid;
+        grid-template-columns: 50% 50%;
         place-items: center;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 0%;
+    }
+
+    .about-bakery img{
+        padding-top: 2rem;
+    }
+
+    .home-info{
+        max-width: 400px;
+        text-align: end;
+    }
+
+    .home-info p{
+        font-size: large;
     }
 
     .last-part{
         margin-top: 3rem;
         margin-bottom: 3rem;
         display: flex;
-        justify-content: space-around;
+        justify-content:space-evenly;
+    }
+
+    .contact a{
+        margin-left: 2rem;
+    }
+
+    .contact {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     /* THE FOOTER OF THE PAGE */
