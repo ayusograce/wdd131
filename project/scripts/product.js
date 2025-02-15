@@ -7,7 +7,7 @@ const carousels = [
 ];
 carousels.forEach((carousel) => {
 	const carouselElement = document.getElementById(carousel.id);
-	const imgElement = carouselElement.querySelector("#carousel-img");
+	const imgElement = carouselElement.querySelector(".carousel-img");
 	const prevButton = carouselElement.querySelector(".prev");
 	const nextButton = carouselElement.querySelector(".next");
   prevButton.addEventListener("click", () => {
