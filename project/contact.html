@@ -44,15 +44,15 @@
                 <h2>Contact form</h2>
                 <form method="get" action="message.html" class="f1">
                     <label for="name">Name*<input type="text" name="name" id="name" placeholder="Your name" required></label> 
-                    <label for="mail">Email*<input type="email" name="email" placeholder="someone@email.com" required></label>
+                    <label for="email">Email*<input type="email" name="email" placeholder="someone@email.com" required></label>
                     <label for="message">Type of message*
                         <select name="message" id="message" required>
                             <option value="" disabled selected>Select an option...</option>
                         </select>
                     </label>
-                    <label for="telephone">Phone <input type="tel" name="phone" placeholder="1235551234" ></label>
+                    <label for="telephone">Phone <input id="telephone" type="tel" name="phone" placeholder="1235551234" ></label>
                     <label for="completiondate">Date for the order<input type="date" name="completeDate" id="completiondate"></label>
-                    <label for="message">Your message*
+                    <label for="review">Your message*
                     <textarea id="review" name="review" rows="4" placeholder="Write your message here!" required></textarea></label>
                     <input type="submit" value="Submit my message">
                 </form>
